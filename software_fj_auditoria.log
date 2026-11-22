@@ -1,0 +1,63 @@
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.<module>:69] ================================================================================
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.<module>:70] INICIALIZACIÓN DEL SISTEMA SOFTWARE FJ - COMPONENTE PRÁCTICO FASE 4 (UNAD)
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.<module>:71] Registro de auditoría vinculado exitosamente en: c:\Users\usuario\Documents\Documentos\Trabajos académicos\Programación\2026_3\Fase 4\Grupo 511\Cifuentes\software_fj_auditoria.log
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.<module>:72] ================================================================================
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.main:1533] Iniciando aplicación Software FJ...
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.__init__:710] Instancia de SistemaGestionSoftwareFJ inicializada con colecciones vacías.
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:866] ================================================================================
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:867] INICIANDO SUITE DE 10 SIMULACIONES OPERATIVAS OBLIGATORIAS
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:868] ================================================================================
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:875] 
+>>> SIMULACIÓN 1: Registro de Cliente Válido (Persona Natural)
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.registrar_cliente:723] Intentando registrar cliente con CC: 1018456789...
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.registrar_cliente:747] [CLIENTE CREADO] ID=1018456789 | Segmento=Estándar
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.registrar_cliente:751] Fin del ciclo de registro de cliente para CC: 1018456789. Estado de éxito: True
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:895] 
+>>> SIMULACIÓN 2: Registro de Cliente con Correo Electrónico Inválido
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.registrar_cliente:723] Intentando registrar cliente con CC: 79065563...
+[2026-11-12 12:17:45] [ERROR   ] [SoftwareFJ.registrar_cliente:736] [REGISTRO CLIENTE FALLIDO] [ERR-CLI-001] El correo electrónico suministrado no cumple con el estándar RFC 5322 (ejemplo: usuario@dominio.com). | Parámetros contextuales: {'email_recibido': 'correo_invalido_sin_arroba.com'}
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.registrar_cliente:751] Fin del ciclo de registro de cliente para CC: 79065563. Estado de éxito: False
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:915] 
+>>> SIMULACIÓN 3: Registro de Cliente Corporativo Válido
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.registrar_cliente:723] Intentando registrar cliente con CC: 9012345678...
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.registrar_cliente:747] [CLIENTE CREADO] ID=9012345678 | Segmento=Corporativo
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.registrar_cliente:751] Fin del ciclo de registro de cliente para CC: 9012345678. Estado de éxito: True
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:935] 
+>>> SIMULACIÓN 4: Creación e Incorporación de 3 Familias de Servicios
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.agregar_servicio:766] [SERVICIO DISPONIBLE] SALA EJECUTIVA: Sala de Juntas Diamond 4K | Aforo: 18 personas | Equipamiento: Con proyector 4K y videoconferencia | Tarifa: $85,000.00/hora + IVA
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.agregar_servicio:766] [SERVICIO DISPONIBLE] EQUIPO TECNOLÓGICO: Workstation Portátil ThinkPad P16 [Gama ALTA] | Stock: 5 u. | Garantía requerida: $800,000.00 | Tarifa: $140,000.00/día
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.agregar_servicio:766] [SERVICIO DISPONIBLE] ASESORÍA ESPECIALIZADA: Auditoría en Arquitectura Cloud AWS | Área: DevOps / Serverless | Nivel: SENIOR | Tarifa base/sesión: $250,000.00 + factor nivel
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:958] 
+>>> SIMULACIÓN 5: Creación Incorrecta de Servicio con Tarifa Inconsistente
+[2026-11-12 12:17:45] [ERROR   ] [SoftwareFJ.ejecutar_suite_simulaciones:964] [CAPTURA CORRECTA EN SIMULACIÓN 5] [ERR-SRV-002] La tarifa base de un servicio debe ser un valor monetario estrictamente positivo. | Parámetros contextuales: {'tarifa_base': -50000.0}
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:979] 
+>>> SIMULACIÓN 6: Reserva Válida de Sala con Descuento Corporativo Automático
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:788] Iniciando transacción de reserva ID=RSV-2026-001...
+[2026-11-12 12:17:45] [DEBUG   ] [SoftwareFJ.procesar_calculo_costo:631] Cálculo exitoso para Reserva RSV-2026-001: $364,140.00 COP
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.confirmar:662] Reserva RSV-2026-001 CONFIRMADA exitosamente para cliente Innovaciones Digitales S.A.S..
+[2026-11-12 12:17:45] [INFO    ] [SoftwareFJ.crear_y_procesar_reserva:821] [TRANSACCIÓN EXITOSA] Reserva RSV-2026-001 almacenada en memoria con estado CONFIRMADA.
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:824] Transacción RSV-2026-001 finalizada. Total reservas vigentes: 1.
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1001] 
+>>> SIMULACIÓN 7: Solicitud de Reserva con Aforo Excedido
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:788] Iniciando transacción de reserva ID=RSV-2026-002...
+[2026-11-12 12:17:46] [ERROR   ] [SoftwareFJ.crear_y_procesar_reserva:812] [RESERVA RECHAZADA] [ERR-RSV-005] El aforo requerido (40 personas) excede la capacidad máxima de la sala (18 personas). | Parámetros contextuales: {'asistentes': 40, 'aforo_max': 18}
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:824] Transacción RSV-2026-002 finalizada. Total reservas vigentes: 1.
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1022] 
+>>> SIMULACIÓN 8: Alquiler de 2 Equipos por 10 Días con Seguro Todo Riesgo
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:788] Iniciando transacción de reserva ID=RSV-2026-003...
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.procesar_calculo_costo:631] Cálculo exitoso para Reserva RSV-2026-003: $3,593,800.00 COP
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.confirmar:662] Reserva RSV-2026-003 CONFIRMADA exitosamente para cliente Innovaciones Digitales S.A.S..
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.crear_y_procesar_reserva:821] [TRANSACCIÓN EXITOSA] Reserva RSV-2026-003 almacenada en memoria con estado CONFIRMADA.
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:824] Transacción RSV-2026-003 finalizada. Total reservas vigentes: 2.
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1043] 
+>>> SIMULACIÓN 9: Intento de Contratar un Servicio Puesto en Mantenimiento
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:788] Iniciando transacción de reserva ID=RSV-2026-004...
+[2026-11-12 12:17:46] [ERROR   ] [SoftwareFJ.crear_y_procesar_reserva:812] [RESERVA RECHAZADA] [ERR-SRV-003] El servicio 'Auditoría en Arquitectura Cloud AWS' (SRV-ASES-01) se encuentra inactivo temporalmente o en mantenimiento. | Parámetros contextuales: {'servicio_id': 'SRV-ASES-01', 'activo': False}
+[2026-11-12 12:17:46] [DEBUG   ] [SoftwareFJ.crear_y_procesar_reserva:824] Transacción RSV-2026-004 finalizada. Total reservas vigentes: 2.
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1068] 
+>>> SIMULACIÓN 10: Flujo de Cancelación y Detección de Transición de Estado Ilegal
+[2026-11-12 12:17:46] [WARNING ] [SoftwareFJ.cancelar:674] Reserva RSV-2026-001 CANCELADA. Estado previo: CONFIRMADA. Motivo: 'Reunión corporativa reprogramada'. Cliente: Innovaciones Digitales S.A.S..
+[2026-11-12 12:17:46] [ERROR   ] [SoftwareFJ.cancelar_reserva:837] [CANCELACIÓN FALLIDA] [ERR-STA-006] La reserva ya se encuentra en estado terminal 'CANCELADA' y no puede ser cancelada. | Parámetros contextuales: {'estado_actual': 'CANCELADA', 'reserva_id': 'RSV-2026-001'}
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1083] ================================================================================
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1084] SUITE DE 10 SIMULACIONES FINALIZADA CON TOTAL ESTABILIDAD DEL SISTEMA
+[2026-11-12 12:17:46] [INFO    ] [SoftwareFJ.ejecutar_suite_simulaciones:1085] ================================================================================
