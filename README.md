@@ -9,7 +9,7 @@
 
 ---
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 El proyecto implementa un sistema empresarial orientado a objetos para la compañía **Software FJ**, especializada en la oferta de servicios tecnológicos:
 1. **Reserva de Salas Ejecutivas y de Juntas:** Tarificación horaria, recargo en fines de semana y control de aforo.
 2. **Alquiler de Equipos Tecnológicos:** Arrendamiento diario de workstations/laptops, pólizas de seguro todo riesgo y administración física de stock en memoria.
@@ -19,7 +19,7 @@ El sistema fue diseñado bajo la restricción estricta de **no utilizar bases de
 
 ---
 
-## 🏗 Arquitectura y Principios de POO Implementados
+## Arquitectura y Principios de POO Implementados
 * **Abstracción:** Clase base pura `EntidadBase` y clase base `Servicio` (derivadas de `abc.ABC`).
 * **Encapsulación:** Atributos privados en `Cliente` con getters/setters (`@property`) y validación rigurosa de formato (RFC 5322 para correos electrónicos y rangos numéricos para teléfonos).
 * **Herencia y Polimorfismo:** `ReservaSala`, `AlquilerEquipo` y `AsesoriaEspecializada` heredan de `Servicio` implementando métodos sobrescritos (`calcular_costo()`, `describir_servicio()`).
@@ -27,7 +27,7 @@ El sistema fue diseñado bajo la restricción estricta de **no utilizar bases de
 
 ---
 
-## 🛡 Manejo Avanzado de Excepciones y Resiliencia
+## Manejo Avanzado de Excepciones y Resiliencia
 En estricto cumplimiento del **Primer Criterio de la Rúbrica (50 puntos)**:
 1. **Jerarquía de Excepciones Personalizadas:**
    * `SoftwareFJError` (Excepción raíz)
@@ -46,7 +46,7 @@ En estricto cumplimiento del **Primer Criterio de la Rúbrica (50 puntos)**:
 
 ---
 
-## ⚡ Suite de 10 Simulaciones Operativas (Criterio 2 - 35 puntos)
+## Suite de 10 Simulaciones Operativas (Criterio 2 - 35 puntos)
 El sistema incluye un módulo automatizado que prueba 10 escenarios secuenciales:
 1. **Simulación 1:** Registro exitoso de persona natural (Válido).
 2. **Simulación 2:** Captura controlada de `ClienteInvalidoError` por correo electrónico mal formado (Inválido).
@@ -61,7 +61,7 @@ El sistema incluye un módulo automatizado que prueba 10 escenarios secuenciales
 
 ---
 
-## 🚀 Instrucciones de Ejecución
+## Instrucciones de Ejecución
 
 ### Prerrequisitos
 * Python 3.10 o superior instalado.
@@ -88,7 +88,7 @@ Get-Content -Path "software_fj_auditoria.log" -Tail 50
 
 ---
 
-## 👥 Colaboración y Buenas Prácticas en Git / GitHub (Criterio 4 - 30 puntos)
+## Colaboración y Buenas Prácticas en Git / GitHub (Criterio 4 - 30 puntos)
 * **Ramas de Trabajo:** Modelo de ramas por funcionalidad (`feature/excepciones`, `feature/simulaciones`, `feature/gui-tkinter`).
 * **Commits Semánticos:** Estructura `feat:`, `fix:`, `docs:`, `refactor:`, `test:`.
 * **Pull Requests:** Revisiones cruzadas documentadas para integración en la rama `main`.
